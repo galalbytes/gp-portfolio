@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SILink — Smarter Validation for Safer Mobility</title>
+  <meta name="description" content="SILink is a Digital Twin-based automotive validation platform for AEB and in-vehicle network communication. Developed under Siemens GP Mentorship Program.">
+  <meta name="theme-color" content="#0B1D34">
+  <meta property="og:title" content="SILink — Smarter Validation for Safer Mobility">
+  <meta property="og:description" content="A Digital Twin-based validation platform for AEB and in-vehicle network communication. Case study and validation of SIL-KIT-integrated in-vehicle network architectures.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect rx='6' width='32' height='32' fill='%230B1D34'/><text x='16' y='22' text-anchor='middle' font-size='16' font-family='sans-serif' font-weight='700' fill='%2322BBD3'>S</text></svg>">
+</head>
+<body>
+
+<!-- ============================================
+     1. HEADER / NAVIGATION
+     ============================================ -->
+<nav class="site-nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#" class="nav-brand">
+      <span class="brand-si">SI</span><span class="brand-link">Link</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="nav-links">
+      <a href="#banner-display">Banner</a>
+      <a href="#reel">Project Reel</a>
+      <a href="#overview">Overview</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#demos">Demos</a>
+      <a href="#team">Team</a>
+      <a href="#resources">Resources</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================
+     2. HERO
+     ============================================ -->
+<section class="hero" id="hero">
+  <div class="container hero-content">
+    <div class="hero-badge">Graduation Project 2025–2026</div>
+    <h1><span class="brand-si">SI</span><span class="brand-link">Link</span></h1>
+    <p class="hero-tagline">Smarter Validation for Safer Mobility</p>
+    <p class="hero-desc">A Digital Twin-based validation platform for AEB and in-vehicle network communication.</p>
+    <div class="hero-meta">
+      <span>Developed under Siemens GP Mentorship Program</span>
+      <span>Beni Suef University — Faculty of Engineering</span>
+    </div>
+    <div class="hero-buttons">
+      <a href="#demos" class="btn btn-primary">
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+        Watch Demos
+      </a>
+      <a href="#workflow" class="btn btn-secondary">
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+        View Workflow
+      </a>
+      <a href="#team" class="btn btn-secondary">
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+        Meet the Team
+      </a>
+      <a href="Files/Integration SIL-KIT with IVN.pptx" class="btn btn-secondary" download>
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        Presentation
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     30-SECOND PROJECT PITCH
+     ============================================ -->
+<section id="pitch">
+  <div class="container">
+    <div class="fade-up">
+      <p class="section-label">30-Second Pitch</p>
+      <div class="pitch-card">
+        <p>Modern vehicle functions cannot be trusted by testing the algorithm alone. SILink validates the full chain: simulation data, middleware communication, AUTOSAR-oriented logic, CAN monitoring, and optional hardware response. The AEB case study proves the workflow under safety-critical timing and decision conditions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     PROJECT REEL
+     ============================================ -->
+<section id="reel">
+  <div class="container">
+    <div class="fade-up" style="text-align:center;">
+      <p class="section-label" style="justify-content:center;">Project Reel</p>
+      <h2>Project Reel</h2>
+    </div>
+    <div class="reel-wrapper fade-up">
+      <div class="reel-container">
+        <video controls preload="metadata">
+          <source src="Reel/reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     PROJECT BANNER
+     ============================================ -->
+<section id="banner-display">
+  <div class="container">
+    <div class="fade-up">
+      <p class="section-label">Project Visuals</p>
+      <h2>Project Banner</h2>
+      <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(11,29,52,0.06); margin-top: 1.5rem; background: #EEF2F5;">
+        <img src="Files/banner.jpg" alt="Project Banner" style="width: 100%; height: auto; display: block;" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     5. PROJECT OVERVIEW
+     ============================================ -->
+<section id="overview">
+  <div class="container">
+    <div class="fade-up">
+      <p class="section-label">Project Overview</p>
+      <h2>What is SILink?</h2>
+      <p class="overview-intro">SILink is a graduation project developed under the Siemens GP Mentorship Program. It focuses on validating in-vehicle network architectures using Digital Twin simulation. The project uses Automatic Emergency Braking as a safety-critical case study because AEB requires perception, communication, real-time decision logic, CAN monitoring, and actuation behavior.</p>
+    </div>
+    <div class="overview-grid fade-up">
+      <div class="overview-card">
+        <h4>Problem</h4>
+        <p>Automotive validation often becomes fragmented across simulation tools, communication middleware, embedded software, monitoring tools, and hardware testing.</p>
+      </div>
+      <div class="overview-card">
+        <h4>Solution</h4>
+        <p>SILink connects these layers into one workflow where vehicle data moves from CARLA to the gateway, through SIL-KIT, into AUTOSAR/vECU logic, then to CANoe monitoring and optional hardware output.</p>
+      </div>
+      <div class="overview-card">
+        <h4>Impact</h4>
+        <p>The platform provides a repeatable and observable environment for testing safety-related behavior before physical deployment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     6. WORKFLOW
+     ============================================ -->
+<section id="workflow">
+  <div class="container">
+    <div class="fade-up">
+      <p class="section-label">Workflow</p>
+      <h2>From Digital Scenario to Validated Vehicle Response</h2>
+      <p class="workflow-intro">Instead of testing the AEB algorithm in isolation, SILink validates how data is generated, transferred, processed, monitored, and reflected in the final control response.</p>
+    </div>
+    <div class="timeline fade-up">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <p class="timeline-step">Step 01</p>
+        <h4 class="timeline-title">CARLA Digital Twin</h4>
+        <p class="timeline-desc">CARLA provides the virtual driving environment. It generates ego vehicle motion, obstacle scenarios, and sensor-related information used by the AEB case study.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <p class="timeline-step">Step 02</p>
+        <h4 class="timeline-title">Gateway and Data Preparation</h4>
+        <p class="timeline-desc">The gateway extracts the required signals, mainly ego speed and obstacle distance, then prepares them for communication with the middleware layer.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <p class="timeline-step">Step 03</p>
+        <h4 class="timeline-title">SIL-KIT Communication</h4>
+        <p class="timeline-desc">SIL-KIT acts as the distributed communication layer. It allows simulation participants to exchange data and supports validation of in-vehicle network behavior.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <p class="timeline-step">Step 04</p>
+        <h4 class="timeline-title">AUTOSAR / vECU Logic</h4>
+        <p class="timeline-desc">The AEB logic is structured using AUTOSAR-oriented concepts such as software components, runnables, events, and RTE-style interfaces. This keeps the logic closer to real automotive software practices.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <p class="timeline-step">Step 05</p>
+        <h4 class="timeline-title">CAN / CAN FD Mapping</h4>
+        <p class="timeline-desc">The exchanged signals are mapped into CAN-based communication. Speed, distance, warning state, throttle, and brake values are represented as structured communication signals.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <p class="timeline-step">Step 06</p>
+        <h4 class="timeline-title">CANoe Monitoring</h4>
+        <p class="timeline-desc">CANoe provides visibility into runtime behavior. It helps observe speed, RPM, warning status, brake output, throttle output, and communication flow.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <p class="timeline-step">Step 07</p>
+        <h4 class="timeline-title">Optional Hardware Demonstrator</h4>
+        <p class="timeline-desc">Selected control outputs can be forwarded to a small physical prototype to demonstrate how simulation decisions can influence real hardware behavior.</p>
+      </div>
+    </div>
+    <div class="workflow-note fade-up">
+      This workflow makes SILink more than a simulation demo. It is a connected validation environment that links Digital Twin behavior, network communication, software logic, monitoring, and physical response.
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     7. AEB CASE STUDY
+     ============================================ -->
+<section id="case-study">
+  <div class="container">
+    <div class="fade-up">
+      <p class="section-label">Case Study</p>
+      <h2>Why AEB?</h2>
+      <p class="aeb-intro">Automatic Emergency Braking was selected as the validation case study because it is time-sensitive and safety-related. It naturally stresses perception, communication, deterministic decision logic, and runtime monitoring.</p>
+    </div>
+    <div class="aeb-flow fade-up">
+      <span class="aeb-flow-item">Distance + Speed</span>
+      <span class="aeb-flow-arrow">→</span>
+      <span class="aeb-flow-item">TTC</span>
+      <span class="aeb-flow-arrow">→</span>
+      <span class="aeb-flow-item">FCW Level</span>
+      <span class="aeb-flow-arrow">→</span>
+      <span class="aeb-flow-item">Brake / Throttle / Warning</span>
+    </div>
+    <div class="aeb-bullets fade-up">
+      <div class="aeb-bullet">LiDAR/distance-based obstacle detection</div>
+      <div class="aeb-bullet">Time-To-Collision calculation</div>
+      <div class="aeb-bullet">Forward Collision Warning levels</div>
+      <div class="aeb-bullet">Partial and full braking decisions</div>
+      <div class="aeb-bullet">Lane-change / avoidance behavior as an extension</div>
+      <div class="aeb-bullet">Runtime monitoring through CANoe</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     8. TECHNICAL HIGHLIGHTS
+     ============================================ -->
+<section id="highlights">
+  <div class="container">
+    <div class="fade-up">
+      <p class="section-label">Technical Highlights</p>
+      <h2>Technical Highlights</h2>
+    </div>
+    <div class="highlights-grid fade-up">
+      <div class="highlight-card">
+        <h4>
+          <span class="highlight-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          </span>
+          Digital Twin Simulation
+        </h4>
+        <p>CARLA creates repeatable vehicle and obstacle scenarios.</p>
+      </div>
+      <div class="highlight-card">
+        <h4>
+          <span class="highlight-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+          </span>
+          Middleware Communication
+        </h4>
+        <p>SIL-KIT connects distributed participants and supports network simulation.</p>
+      </div>
+      <div class="highlight-card">
+        <h4>
+          <span class="highlight-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+          </span>
+          AUTOSAR-Oriented Logic
+        </h4>
+        <p>AEB logic is organized around software components, runnables, and RTE-style communication.</p>
+      </div>
+      <div class="highlight-card">
+        <h4>
+          <span class="highlight-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          </span>
+          CANoe Validation
+        </h4>
+        <p>CAN signals and system variables are monitored through dashboards and logs.</p>
+      </div>
+      <div class="highlight-card">
+        <h4>
+          <span class="highlight-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+          </span>
+          Testing Strategy
+        </h4>
+        <p>Validation includes unit testing, integration testing, scenario testing, and free-driving validation.</p>
+      </div>
+      <div class="highlight-card">
+        <h4>
+          <span class="highlight-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+          </span>
+          Hardware Extension
+        </h4>
+        <p>A prototype path demonstrates selected outputs on physical hardware.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     9. DEMOS
+     ============================================ -->
+<section id="demos">
+  <div class="container">
+    <div class="fade-up">
+      <p class="section-label">Demonstrations</p>
+      <h2>Project Demos</h2>
+    </div>
+    <div class="demos-grid fade-up">
+      <!-- Demo 01 -->
+      <div class="demo-card">
+        <video controls preload="metadata" poster="">
+          <source src="Demos/Integration_Demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="demo-info">
+          <p class="demo-number">Demo 01</p>
+          <h4>Communication Chain</h4>
+          <p>Real-time data exchange between CARLA, gateway, SIL-KIT, and validation tools.</p>
+        </div>
+      </div>
+      <!-- Demo 02 -->
+      <div class="demo-card">
+        <video controls preload="metadata">
+          <source src="Demos/Script_Demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="demo-info">
+          <p class="demo-number">Demo 02</p>
+          <h4>AEB Scenario</h4>
+          <p>AEB response during a simulated safety-critical driving situation.</p>
+        </div>
+      </div>
+      <!-- Demo 03 -->
+      <div class="demo-card">
+        <video controls preload="metadata">
+          <source src="Demos/Manual_Control_Demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="demo-info">
+          <p class="demo-number">Demo 03</p>
+          <h4>Manual Control Demo</h4>
+          <p>Manual driving control inside the CARLA simulation while the AEB system runs in the background.</p>
+        </div>
+      </div>
+      <!-- Demo 04 — Coming Soon -->
+      <div class="demo-card coming-soon">
+        <div class="demo-placeholder">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+        </div>
+        <div class="demo-info">
+          <p class="demo-number">Demo 04</p>
+          <h4>Coming Soon</h4>
+          <p>Additional demo will be added later.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     11. TEAM
+     ============================================ -->
+<section id="team">
+  <div class="container">
+    <div class="fade-up">
+      <p class="section-label">The Team</p>
+      <h2>Meet the Team</h2>
+      <p class="team-intro">The project was developed by Beni Suef University engineering students as part of the Siemens GP Mentorship Program.</p>
+    </div>
+    <div class="team-grid">
+
+      <!-- Mohamed Ahmed Galal -->
+      <div class="team-card fade-up">
+        <div class="team-header">
+          <img src="Images/Mohamed_Galal_Image.jpeg" alt="Mohamed Ahmed Galal Mohamed" class="team-photo">
+          <div>
+            <h4 class="team-name">Mohamed Ahmed Galal Mohamed</h4>
+            <p class="team-role">Integration &amp; Validation / SIL-KIT and CANoe</p>
+          </div>
+        </div>
+        <p class="team-bio">Works on connecting the project workflow across simulation, middleware, validation tools, and project presentation.</p>
+        <div class="team-skills">
+          <span class="skill-tag">SIL-KIT</span>
+          <span class="skill-tag">CANoe</span>
+          <span class="skill-tag">Integration</span>
+          <span class="skill-tag">Validation</span>
+          <span class="skill-tag">CAN/CAN FD</span>
+        </div>
+        <div class="team-actions">
+          <a href="CVs/Mohamed_Ahmed_Galal_CV.pdf" class="btn btn-outline btn-sm" download>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download CV
+          </a>
+          <a href="https://linktr.ee/galalbytes" class="btn btn-outline btn-sm" target="_blank" rel="noopener">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+            Linktree
+          </a>
+        </div>
+      </div>
+
+      <!-- Alaa Ahmed Abbas -->
+      <div class="team-card fade-up">
+        <div class="team-header">
+          <img src="Images/Alaa_Image.jpeg" alt="Alaa Ahmed Abbas Ahmed" class="team-photo">
+          <div>
+            <h4 class="team-name">Alaa Ahmed Abbas Ahmed</h4>
+            <p class="team-role">AUTOSAR &amp; Embedded Systems</p>
+          </div>
+        </div>
+        <p class="team-bio">Contributes to the embedded software structure, AUTOSAR-oriented logic, and system implementation.</p>
+        <div class="team-skills">
+          <span class="skill-tag">AUTOSAR</span>
+          <span class="skill-tag">Embedded C</span>
+          <span class="skill-tag">Software Components</span>
+          <span class="skill-tag">RTE</span>
+        </div>
+        <div class="team-actions">
+          <a href="CVs/Alaa_Ahmed_CV.pdf" class="btn btn-outline btn-sm" download>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download CV
+          </a>
+          <a href="https://linktr.ee/alaa.abbas" class="btn btn-outline btn-sm" target="_blank" rel="noopener">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+            Linktree
+          </a>
+        </div>
+      </div>
+
+      <!-- Mohamed Hany -->
+      <div class="team-card fade-up">
+        <div class="team-header">
+          <img src="Images/Mohamed_Hany_Image.jpeg" alt="Mohamed Hany Hemdan Mohamed" class="team-photo">
+          <div>
+            <h4 class="team-name">Mohamed Hany Hemdan Mohamed</h4>
+            <p class="team-role">Project Member</p>
+          </div>
+        </div>
+        <p class="team-bio">Role and details to be updated.</p>
+        <div class="team-skills">
+          <span class="skill-tag">Engineering</span>
+        </div>
+        <div class="team-actions">
+          <a href="CVs/Mohamed_Hany_CV.pdf" class="btn btn-outline btn-sm" download>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download CV
+          </a>
+          <a href="#" class="btn btn-outline btn-sm" target="_blank" rel="noopener">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+            Linktree
+          </a>
+        </div>
+      </div>
+
+      <!-- Mohamed Mahmoud Mokhtar -->
+      <div class="team-card fade-up">
+        <div class="team-header">
+          <img src="Images/Mohamed_Mahmoud_Mokhtar_Image.jpeg" alt="Mohamed Mahmoud Mokhtar Ahmed" class="team-photo">
+          <div>
+            <h4 class="team-name">Mohamed Mahmoud Mokhtar Ahmed</h4>
+            <p class="team-role">Embedded &amp; AUTOSAR Development</p>
+          </div>
+        </div>
+        <p class="team-bio">Contributes to embedded implementation, software logic, and technical development.</p>
+        <div class="team-skills">
+          <span class="skill-tag">Embedded Systems</span>
+          <span class="skill-tag">AUTOSAR</span>
+          <span class="skill-tag">C/C++</span>
+        </div>
+        <div class="team-actions">
+          <a href="CVs/Mohamed_Mahmoud_Mokhtar_CV.pdf" class="btn btn-outline btn-sm" download>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download CV
+          </a>
+          <a href="https://linktr.ee/mohamedmokhtar5" class="btn btn-outline btn-sm" target="_blank" rel="noopener">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+            Linktree
+          </a>
+        </div>
+      </div>
+
+      <!-- Verena Ashraf -->
+      <div class="team-card fade-up">
+        <div class="team-header">
+          <!-- Missing photo — initials placeholder -->
+          <div class="team-initials" aria-label="Verena Ashraf Wadea Aziz">VA</div>
+          <div>
+            <h4 class="team-name">Verena Ashraf Wadea Aziz</h4>
+            <p class="team-role">Testing, Networking &amp; Embedded Support</p>
+          </div>
+        </div>
+        <p class="team-bio">Contributes to testing, system validation, networking, and embedded support tasks.</p>
+        <div class="team-skills">
+          <span class="skill-tag">Testing</span>
+          <span class="skill-tag">Networking</span>
+          <span class="skill-tag">Embedded</span>
+          <span class="skill-tag">Validation</span>
+        </div>
+        <div class="team-actions">
+          <a href="CVs/Verena_Ashraf_Wadea_CV.pdf" class="btn btn-outline btn-sm" download>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download CV
+          </a>
+          <a href="#" class="btn btn-outline btn-sm" target="_blank" rel="noopener">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+            Linktree
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     12. PROGRAM & INSTITUTION
+     ============================================ -->
+<section id="program">
+  <div class="container">
+    <div class="fade-up">
+      <p class="section-label">Affiliation</p>
+      <h2>Program &amp; Institution</h2>
+      <p class="program-text">SILink was developed as a graduation project under the Siemens GP Mentorship Program, with academic affiliation to Beni Suef University, Faculty of Engineering, Electrical Engineering Department.</p>
+    </div>
+    <div class="program-logos fade-up">
+      <img src="logos/Siemens-Logo.png" alt="Siemens" class="program-logo">
+      <div class="logo-sep"></div>
+      <img src="logos/BSU-Logo.png" alt="Beni Suef University" class="program-logo">
+      <div class="logo-sep"></div>
+      <img src="logos/Eng-Logo.svg" alt="Faculty of Engineering" class="program-logo">
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     13. RESOURCES
+     ============================================ -->
+<section id="resources">
+  <div class="container">
+    <div class="fade-up">
+      <p class="section-label">Downloads &amp; Links</p>
+      <h2>Resources</h2>
+    </div>
+    <div class="resources-grid fade-up">
+      <!-- Presentation -->
+      <a href="Files/Integration SIL-KIT with IVN.pptx" class="resource-card" download>
+        <span class="resource-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+        </span>
+        <div class="resource-content">
+          <h4>Project Presentation</h4>
+          <p>Download .pptx</p>
+        </div>
+      </a>
+      <!-- Banner -->
+      <a href="Files/Banner.pdf" class="resource-card" download>
+        <span class="resource-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+        </span>
+        <div class="resource-content">
+          <h4>Project Banner</h4>
+          <p>Download .pdf</p>
+        </div>
+      </a>
+      <!-- Demo Videos -->
+      <a href="#demos" class="resource-card">
+        <span class="resource-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+        </span>
+        <div class="resource-content">
+          <h4>Demo Videos</h4>
+          <p>Watch project demos</p>
+        </div>
+      </a>
+      <!-- Team CVs -->
+      <a href="#team" class="resource-card">
+        <span class="resource-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+        </span>
+        <div class="resource-content">
+          <h4>Team CVs</h4>
+          <p>Individual downloads</p>
+        </div>
+      </a>
+      <!-- Full Project Book -->
+      <div class="resource-card disabled">
+        <span class="resource-icon orange-accent">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+        </span>
+        <div class="resource-content">
+          <h4>Full Project Book</h4>
+          <p>Working on it</p>
+        </div>
+        <span class="resource-status">Coming soon</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     14. CONTACT / FOOTER
+     ============================================ -->
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-brand">
+      <h3><span class="brand-si">SI</span><span class="brand-link">Link</span></h3>
+    </div>
+    <p class="footer-tagline">Smarter Validation for Safer Mobility</p>
+
+    <div class="footer-divider"></div>
+    <div class="footer-meta">
+      <span>Developed under Siemens GP Mentorship Program</span>
+      <span>Beni Suef University — Faculty of Engineering</span>
+      <span>Electrical Engineering Department</span>
+      <span>Academic Year 2025–2026</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
