@@ -20,7 +20,7 @@
 <nav class="site-nav" id="nav">
   <div class="container nav-inner">
     <a href="#" class="nav-brand">
-      <span class="brand-si">SI</span><span class="brand-link">Link</span>
+      <img src="logos/SILink.png" alt="SILink Logo" class="brand-logo">
     </a>
     <button class="nav-toggle" aria-label="Toggle navigation">
       <span></span>
@@ -28,12 +28,16 @@
       <span></span>
     </button>
     <div class="nav-links">
+      <a href="#hero">Home</a>
+      <a href="#pitch">Pitch</a>
+      <a href="#reel">Reel</a>
       <a href="#banner-display">Banner</a>
-      <a href="#reel">Project Reel</a>
       <a href="#overview">Overview</a>
       <a href="#workflow">Workflow</a>
+      <a href="#case-study">Case Study</a>
       <a href="#demos">Demos</a>
       <a href="#team">Team</a>
+      <a href="#program">Program</a>
       <a href="#resources">Resources</a>
     </div>
   </div>
@@ -220,35 +224,8 @@
       <h2>Why AEB?</h2>
       <p class="aeb-intro">Automatic Emergency Braking was selected as the validation case study because it is time-sensitive and safety-related. It naturally stresses perception, communication, deterministic decision logic, and runtime monitoring.</p>
     </div>
-    <div class="arch-wrapper fade-up">
-      <div class="arch-diagram">
-        <!-- Row 1 -->
-        <div class="arch-node node-carla">CARLA</div>
-        <div class="arch-arrow"><div class="arrow-text">CAN frame</div><div class="arrow-line-h"></div></div>
-        <div class="arch-node node-gateway">GATEWAY</div>
-        <div class="arch-arrow"><div class="arrow-text">CAN frame</div><div class="arrow-line-h"></div></div>
-        <div class="arch-node node-silkit">SIL-KIT</div>
-        <div class="arch-arrow"><div class="arrow-text">CAN frame</div><div class="arrow-line-h"></div></div>
-        <div class="arch-node node-vecu">VECU</div>
-
-        <!-- Row 2 -->
-        <div class="arch-empty"></div>
-        <div class="arch-empty"></div>
-        <div class="arch-empty"></div>
-        <div class="arch-empty"></div>
-        <div class="arch-arrow-vert"><div class="arrow-line-v"></div></div>
-        <div class="arch-empty"></div>
-        <div class="arch-empty"></div>
-
-        <!-- Row 3 -->
-        <div class="arch-empty"></div>
-        <div class="arch-empty"></div>
-        <div class="arch-empty"></div>
-        <div class="arch-empty"></div>
-        <div class="arch-node node-vector">Vector<br>Dashboard</div>
-        <div class="arch-empty"></div>
-        <div class="arch-empty"></div>
-      </div>
+    <div class="arch-image-wrapper fade-up">
+      <img src="Images/architecture.jpeg" alt="System Architecture Diagram" class="arch-diagram-img">
     </div>
     <div class="aeb-bullets fade-up">
       <div class="aeb-bullet">LiDAR/distance-based obstacle detection</div>
@@ -375,15 +352,16 @@
           <p>Manual driving control inside the CARLA simulation while the AEB system runs in the background.</p>
         </div>
       </div>
-      <!-- Demo 04 — Coming Soon -->
-      <div class="demo-card coming-soon">
-        <div class="demo-placeholder">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-        </div>
+      <!-- Demo 04 -->
+      <div class="demo-card">
+        <video controls preload="metadata">
+          <source src="Demos/Hardware_Demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
         <div class="demo-info">
           <p class="demo-number">Demo 04</p>
-          <h4>Coming Soon</h4>
-          <p>Additional demo will be added later.</p>
+          <h4>Hardware Prototype</h4>
+          <p>Demonstrating how the digital simulation outputs actuate and control a physical hardware prototype.</p>
         </div>
       </div>
     </div>
@@ -409,10 +387,10 @@
           <img src="Images/Mohamed_Mahmoud_Mokhtar_Image.jpeg" alt="Mohamed Mahmoud Mokhtar Ahmed" class="team-photo">
           <div>
             <h4 class="team-name">Mohamed Mahmoud Mokhtar Ahmed</h4>
-            <p class="team-role">Team Leader / SIL-KIT &amp; Middleware</p>
+            <p class="team-role">Embedded &amp; Automotive Software Engineer / Team Leader</p>
           </div>
         </div>
-        <p class="team-bio">Leads the team and manages the SIL-KIT distributed communication middleware, enabling network simulation.</p>
+        <p class="team-bio">Focused on AUTOSAR Classic, STM32 firmware, and digital-twin network simulation using CARLA and Vector SIL Kit.</p>
         <div class="team-skills">
           <span class="skill-tag">Team Leadership</span>
           <span class="skill-tag">SIL-KIT</span>
@@ -437,10 +415,10 @@
           <img src="Images/Mohamed_Galal_Image.jpeg" alt="Mohamed Ahmed Galal Mohamed" class="team-photo">
           <div>
             <h4 class="team-name">Mohamed Ahmed Galal Mohamed</h4>
-            <p class="team-role">Embedded Systems &amp; Hardware Integration</p>
+            <p class="team-role">Embedded Systems &amp; Automotive Software Engineer</p>
           </div>
         </div>
-        <p class="team-bio">Handles the embedded implementation and extends the simulation outputs to the physical hardware demonstrator.</p>
+        <p class="team-bio">Specializing in Vector SIL Kit integration, CANoe simulation, embedded hardware implementation, and C/C++ cross-platform connectivity.</p>
         <div class="team-skills">
           <span class="skill-tag">Embedded Systems</span>
           <span class="skill-tag">Hardware Integration</span>
@@ -465,10 +443,10 @@
           <img src="Images/Mohamed_Hany_Image.jpeg" alt="Mohamed Hany Hemdan Mohamed" class="team-photo">
           <div>
             <h4 class="team-name">Mohamed Hany Hemdan Mohamed</h4>
-            <p class="team-role">CARLA Simulation &amp; Environment</p>
+            <p class="team-role">Embedded Systems Engineer</p>
           </div>
         </div>
-        <p class="team-bio">Configures and manages the CARLA Digital Twin, creating repeatable driving scenarios and obstacle detection for the AEB system.</p>
+        <p class="team-bio">Expertise in C/C++, Python, and AUTOSAR, focusing on simulating vehicle environments and implementing AEB logic.</p>
         <div class="team-skills">
           <span class="skill-tag">CARLA</span>
           <span class="skill-tag">3D Simulation</span>
@@ -493,10 +471,10 @@
           <div class="team-initials" aria-label="Verena Ashraf Wadea Aziz">VA</div>
           <div>
             <h4 class="team-name">Verena Ashraf Wadea Aziz</h4>
-            <p class="team-role">AUTOSAR Development &amp; Architecture</p>
+            <p class="team-role">Embedded &amp; IT Engineer</p>
           </div>
         </div>
-        <p class="team-bio">Designs and implements the AUTOSAR-oriented logic, structuring the AEB components, runnables, and RTE interfaces.</p>
+        <p class="team-bio">Experienced in Classic AUTOSAR architecture, Windows/Linux Server Administration, and system testing and validation.</p>
         <div class="team-skills">
           <span class="skill-tag">AUTOSAR</span>
           <span class="skill-tag">Software Components</span>
@@ -521,10 +499,10 @@
           <img src="Images/Alaa_Image.jpeg" alt="Alaa Ahmed Abbas Ahmed" class="team-photo">
           <div>
             <h4 class="team-name">Alaa Ahmed Abbas Ahmed</h4>
-            <p class="team-role">CANoe Validation &amp; Network Monitoring</p>
+            <p class="team-role">Embedded Systems Engineer</p>
           </div>
         </div>
-        <p class="team-bio">Responsible for CAN/CAN FD network monitoring, system variables validation, and creating real-time dashboards in Vector CANoe.</p>
+        <p class="team-bio">Skilled in Automotive Simulation, embedded AI, hardware implementation, and validating in-vehicle network architectures.</p>
         <div class="team-skills">
           <span class="skill-tag">CANoe</span>
           <span class="skill-tag">CAN/CAN FD</span>
@@ -640,7 +618,7 @@
 <footer class="site-footer" id="contact">
   <div class="container">
     <div class="footer-brand">
-      <h3><span class="brand-si">SI</span><span class="brand-link">Link</span></h3>
+      <img src="logos/SILink.png" alt="SILink Logo" class="footer-logo">
     </div>
     <p class="footer-tagline">Smarter Validation for Safer Mobility</p>
 
