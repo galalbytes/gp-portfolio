@@ -220,14 +220,35 @@
       <h2>Why AEB?</h2>
       <p class="aeb-intro">Automatic Emergency Braking was selected as the validation case study because it is time-sensitive and safety-related. It naturally stresses perception, communication, deterministic decision logic, and runtime monitoring.</p>
     </div>
-    <div class="aeb-flow fade-up">
-      <span class="aeb-flow-item">Distance + Speed</span>
-      <span class="aeb-flow-arrow">→</span>
-      <span class="aeb-flow-item">TTC</span>
-      <span class="aeb-flow-arrow">→</span>
-      <span class="aeb-flow-item">FCW Level</span>
-      <span class="aeb-flow-arrow">→</span>
-      <span class="aeb-flow-item">Brake / Throttle / Warning</span>
+    <div class="arch-wrapper fade-up">
+      <div class="arch-diagram">
+        <!-- Row 1 -->
+        <div class="arch-node node-carla">CARLA</div>
+        <div class="arch-arrow"><div class="arrow-text">CAN frame</div><div class="arrow-line-h"></div></div>
+        <div class="arch-node node-gateway">GATEWAY</div>
+        <div class="arch-arrow"><div class="arrow-text">CAN frame</div><div class="arrow-line-h"></div></div>
+        <div class="arch-node node-silkit">SIL-KIT</div>
+        <div class="arch-arrow"><div class="arrow-text">CAN frame</div><div class="arrow-line-h"></div></div>
+        <div class="arch-node node-vecu">VECU</div>
+
+        <!-- Row 2 -->
+        <div class="arch-empty"></div>
+        <div class="arch-empty"></div>
+        <div class="arch-empty"></div>
+        <div class="arch-empty"></div>
+        <div class="arch-arrow-vert"><div class="arrow-line-v"></div></div>
+        <div class="arch-empty"></div>
+        <div class="arch-empty"></div>
+
+        <!-- Row 3 -->
+        <div class="arch-empty"></div>
+        <div class="arch-empty"></div>
+        <div class="arch-empty"></div>
+        <div class="arch-empty"></div>
+        <div class="arch-node node-vector">Vector<br>Dashboard</div>
+        <div class="arch-empty"></div>
+        <div class="arch-empty"></div>
+      </div>
     </div>
     <div class="aeb-bullets fade-up">
       <div class="aeb-bullet">LiDAR/distance-based obstacle detection</div>
@@ -382,102 +403,21 @@
     </div>
     <div class="team-grid">
 
-      <!-- Mohamed Ahmed Galal -->
-      <div class="team-card fade-up">
-        <div class="team-header">
-          <img src="Images/Mohamed_Galal_Image.jpeg" alt="Mohamed Ahmed Galal Mohamed" class="team-photo">
-          <div>
-            <h4 class="team-name">Mohamed Ahmed Galal Mohamed</h4>
-            <p class="team-role">Integration &amp; Validation / SIL-KIT and CANoe</p>
-          </div>
-        </div>
-        <p class="team-bio">Works on connecting the project workflow across simulation, middleware, validation tools, and project presentation.</p>
-        <div class="team-skills">
-          <span class="skill-tag">SIL-KIT</span>
-          <span class="skill-tag">CANoe</span>
-          <span class="skill-tag">Integration</span>
-          <span class="skill-tag">Validation</span>
-          <span class="skill-tag">CAN/CAN FD</span>
-        </div>
-        <div class="team-actions">
-          <a href="CVs/Mohamed_Ahmed_Galal_CV.pdf" class="btn btn-outline btn-sm" download>
-            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-            Download CV
-          </a>
-          <a href="https://linktr.ee/galalbytes" class="btn btn-outline btn-sm" target="_blank" rel="noopener">
-            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
-            Linktree
-          </a>
-        </div>
-      </div>
-
-      <!-- Alaa Ahmed Abbas -->
-      <div class="team-card fade-up">
-        <div class="team-header">
-          <img src="Images/Alaa_Image.jpeg" alt="Alaa Ahmed Abbas Ahmed" class="team-photo">
-          <div>
-            <h4 class="team-name">Alaa Ahmed Abbas Ahmed</h4>
-            <p class="team-role">AUTOSAR &amp; Embedded Systems</p>
-          </div>
-        </div>
-        <p class="team-bio">Contributes to the embedded software structure, AUTOSAR-oriented logic, and system implementation.</p>
-        <div class="team-skills">
-          <span class="skill-tag">AUTOSAR</span>
-          <span class="skill-tag">Embedded C</span>
-          <span class="skill-tag">Software Components</span>
-          <span class="skill-tag">RTE</span>
-        </div>
-        <div class="team-actions">
-          <a href="CVs/Alaa_Ahmed_CV.pdf" class="btn btn-outline btn-sm" download>
-            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-            Download CV
-          </a>
-          <a href="https://linktr.ee/alaa.abbas" class="btn btn-outline btn-sm" target="_blank" rel="noopener">
-            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
-            Linktree
-          </a>
-        </div>
-      </div>
-
-      <!-- Mohamed Hany -->
-      <div class="team-card fade-up">
-        <div class="team-header">
-          <img src="Images/Mohamed_Hany_Image.jpeg" alt="Mohamed Hany Hemdan Mohamed" class="team-photo">
-          <div>
-            <h4 class="team-name">Mohamed Hany Hemdan Mohamed</h4>
-            <p class="team-role">Project Member</p>
-          </div>
-        </div>
-        <p class="team-bio">Role and details to be updated.</p>
-        <div class="team-skills">
-          <span class="skill-tag">Engineering</span>
-        </div>
-        <div class="team-actions">
-          <a href="CVs/Mohamed_Hany_CV.pdf" class="btn btn-outline btn-sm" download>
-            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-            Download CV
-          </a>
-          <a href="#" class="btn btn-outline btn-sm" target="_blank" rel="noopener">
-            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
-            Linktree
-          </a>
-        </div>
-      </div>
-
-      <!-- Mohamed Mahmoud Mokhtar -->
+      <!-- Mohamed Mahmoud Mokhtar (Team Leader & SIL-KIT) -->
       <div class="team-card fade-up">
         <div class="team-header">
           <img src="Images/Mohamed_Mahmoud_Mokhtar_Image.jpeg" alt="Mohamed Mahmoud Mokhtar Ahmed" class="team-photo">
           <div>
             <h4 class="team-name">Mohamed Mahmoud Mokhtar Ahmed</h4>
-            <p class="team-role">Embedded &amp; AUTOSAR Development</p>
+            <p class="team-role">Team Leader / SIL-KIT &amp; Middleware</p>
           </div>
         </div>
-        <p class="team-bio">Contributes to embedded implementation, software logic, and technical development.</p>
+        <p class="team-bio">Leads the team and manages the SIL-KIT distributed communication middleware, enabling network simulation.</p>
         <div class="team-skills">
-          <span class="skill-tag">Embedded Systems</span>
-          <span class="skill-tag">AUTOSAR</span>
-          <span class="skill-tag">C/C++</span>
+          <span class="skill-tag">Team Leadership</span>
+          <span class="skill-tag">SIL-KIT</span>
+          <span class="skill-tag">Middleware</span>
+          <span class="skill-tag">C++</span>
         </div>
         <div class="team-actions">
           <a href="CVs/Mohamed_Mahmoud_Mokhtar_CV.pdf" class="btn btn-outline btn-sm" download>
@@ -491,22 +431,77 @@
         </div>
       </div>
 
-      <!-- Verena Ashraf -->
+      <!-- Mohamed Ahmed Galal (Embedded & Hardware) -->
       <div class="team-card fade-up">
         <div class="team-header">
-          <!-- Missing photo — initials placeholder -->
+          <img src="Images/Mohamed_Galal_Image.jpeg" alt="Mohamed Ahmed Galal Mohamed" class="team-photo">
+          <div>
+            <h4 class="team-name">Mohamed Ahmed Galal Mohamed</h4>
+            <p class="team-role">Embedded Systems &amp; Hardware Integration</p>
+          </div>
+        </div>
+        <p class="team-bio">Handles the embedded implementation and extends the simulation outputs to the physical hardware demonstrator.</p>
+        <div class="team-skills">
+          <span class="skill-tag">Embedded Systems</span>
+          <span class="skill-tag">Hardware Integration</span>
+          <span class="skill-tag">Microcontrollers</span>
+          <span class="skill-tag">C</span>
+        </div>
+        <div class="team-actions">
+          <a href="CVs/Mohamed_Ahmed_Galal_CV.pdf" class="btn btn-outline btn-sm" download>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download CV
+          </a>
+          <a href="https://linktr.ee/galalbytes" class="btn btn-outline btn-sm" target="_blank" rel="noopener">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+            Linktree
+          </a>
+        </div>
+      </div>
+
+      <!-- Mohamed Hany (CARLA Simulation) -->
+      <div class="team-card fade-up">
+        <div class="team-header">
+          <img src="Images/Mohamed_Hany_Image.jpeg" alt="Mohamed Hany Hemdan Mohamed" class="team-photo">
+          <div>
+            <h4 class="team-name">Mohamed Hany Hemdan Mohamed</h4>
+            <p class="team-role">CARLA Simulation &amp; Environment</p>
+          </div>
+        </div>
+        <p class="team-bio">Configures and manages the CARLA Digital Twin, creating repeatable driving scenarios and obstacle detection for the AEB system.</p>
+        <div class="team-skills">
+          <span class="skill-tag">CARLA</span>
+          <span class="skill-tag">3D Simulation</span>
+          <span class="skill-tag">Scenario Generation</span>
+          <span class="skill-tag">Python</span>
+        </div>
+        <div class="team-actions">
+          <a href="CVs/Mohamed_Hany_CV.pdf" class="btn btn-outline btn-sm" download>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download CV
+          </a>
+          <a href="#" class="btn btn-outline btn-sm" target="_blank" rel="noopener">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+            Linktree
+          </a>
+        </div>
+      </div>
+
+      <!-- Verena Ashraf (AUTOSAR) -->
+      <div class="team-card fade-up">
+        <div class="team-header">
           <div class="team-initials" aria-label="Verena Ashraf Wadea Aziz">VA</div>
           <div>
             <h4 class="team-name">Verena Ashraf Wadea Aziz</h4>
-            <p class="team-role">Testing, Networking &amp; Embedded Support</p>
+            <p class="team-role">AUTOSAR Development &amp; Architecture</p>
           </div>
         </div>
-        <p class="team-bio">Contributes to testing, system validation, networking, and embedded support tasks.</p>
+        <p class="team-bio">Designs and implements the AUTOSAR-oriented logic, structuring the AEB components, runnables, and RTE interfaces.</p>
         <div class="team-skills">
-          <span class="skill-tag">Testing</span>
-          <span class="skill-tag">Networking</span>
-          <span class="skill-tag">Embedded</span>
-          <span class="skill-tag">Validation</span>
+          <span class="skill-tag">AUTOSAR</span>
+          <span class="skill-tag">Software Components</span>
+          <span class="skill-tag">RTE</span>
+          <span class="skill-tag">Architecture</span>
         </div>
         <div class="team-actions">
           <a href="CVs/Verena_Ashraf_Wadea_CV.pdf" class="btn btn-outline btn-sm" download>
@@ -514,6 +509,34 @@
             Download CV
           </a>
           <a href="#" class="btn btn-outline btn-sm" target="_blank" rel="noopener">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+            Linktree
+          </a>
+        </div>
+      </div>
+
+      <!-- Alaa Ahmed Abbas (CANoe & Validation) -->
+      <div class="team-card fade-up">
+        <div class="team-header">
+          <img src="Images/Alaa_Image.jpeg" alt="Alaa Ahmed Abbas Ahmed" class="team-photo">
+          <div>
+            <h4 class="team-name">Alaa Ahmed Abbas Ahmed</h4>
+            <p class="team-role">CANoe Validation &amp; Network Monitoring</p>
+          </div>
+        </div>
+        <p class="team-bio">Responsible for CAN/CAN FD network monitoring, system variables validation, and creating real-time dashboards in Vector CANoe.</p>
+        <div class="team-skills">
+          <span class="skill-tag">CANoe</span>
+          <span class="skill-tag">CAN/CAN FD</span>
+          <span class="skill-tag">Validation</span>
+          <span class="skill-tag">Network Monitoring</span>
+        </div>
+        <div class="team-actions">
+          <a href="CVs/Alaa_Ahmed_CV.pdf" class="btn btn-outline btn-sm" download>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            Download CV
+          </a>
+          <a href="https://linktr.ee/alaa.abbas" class="btn btn-outline btn-sm" target="_blank" rel="noopener">
             <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
             Linktree
           </a>
